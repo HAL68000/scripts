@@ -6,8 +6,10 @@ UBUNTU_FOLDER="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-ro
 # Controlla se la cartella esiste
 if [ -d "$UBUNTU_FOLDER" ]; then
     echo "Ubuntu installation found!"
-    proot-distro login ubuntu -- bash -c "apt-get update && apt-get upgrade -y && apt-get install apt-utils"
-    proot-distro login ubuntu -- bash -c "apt-get install apt-utils nodejs npm -y && npm install -g --unsafe-perm node-red"
+    proot-distro login ubuntu -- bash -c "apt-get update"
+    proot-distro login ubuntu -- bash -c "apt-get upgrade -y --fix-missing"
+    proot-distro login ubuntu -- bash -c "apt-get install apt-utils"
+    proot-distro login ubuntu -- bash -c "apt-get install nodejs npm -y && npm install -g --unsafe-perm node-red"
 else
     echo "Ubuntu folder not found, install ubuntu first!"
 fi
