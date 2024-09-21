@@ -1,0 +1,5 @@
+{
+  "Test": "",
+  "Install ubuntu": "/data/data/com.termux/files/home/repo/scripts/install_script/install_ubuntu.sh",
+  "Install Node-red": "/data/data/com.termux/files/home/repo/scripts/install_script/node-red.sh"
+}
