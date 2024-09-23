@@ -2,5 +2,6 @@
   "Test": "",
   "Install ubuntu": "/data/data/com.termux/files/home/repo/scripts/install_script/install_ubuntu.sh",
   "Install Node-red": "/data/data/com.termux/files/home/repo/scripts/install_script/node-red.sh",
-  "Install alpine": "/data/data/com.termux/files/home/repo/scripts/install_script/alpine.sh"
+  "Install alpine": "/data/data/com.termux/files/home/repo/scripts/install_script/alpine.sh",
+  "Install sshd": "/data/data/com.termux/files/home/repo/scripts/install_script/sshd.sh"
 }
